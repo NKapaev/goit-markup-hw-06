@@ -75,13 +75,13 @@
             <h2 class="section-title">Чем мы занимаемся</h2>
             <ul class="list about-list">
                 <li class="about-item"><img src="./images/box1.jpg" alt="Программирование" width="370">
-                <p class="label">десктопные приложения</p>
+                <p class="description">десктопные приложения</p>
                 </li>
                 <li class="about-item"><img src="./images/box2.jpg" alt="Адаптивность" width="370">
-                <p class="label">мобильные приложения</p>
+                <p class="description">мобильные приложения</p>
                 </li>
                 <li class="about-item"><img src="./images/box3.jpg" alt="Дизайн" width="370">
-                <p class="label">дизайнерские решения</p>
+                <p class="description">дизайнерские решения</p>
                 </li>
             </ul>
         </div>
@@ -314,6 +314,34 @@
                 <use href="./images/sprite.svg#icon-close-modal"></use>
             </svg>
         </button>
+
+        <form class="modal-form">
+            <h2>Оставьте свои данные, мы вам перезвоним</h2>
+            <label class="modal-label" for="user-name">Имя</label>
+            <div class="input-wrapper">
+                <input class="modal-input" type="text" name="user-name" id="user-name">
+                <svg class="icon-input">
+                    <use href="./images/sprite.svg#icon-input-name"></use>
+                </svg>
+            </div>
+
+            <label class="modal-label" for="user-tel">Телефон</label>
+            <div class="input-wrapper">
+                <input class="modal-input" type="tel" name="user-tel" id="user-tel">
+                <svg class="icon-input">
+                    <use href="./images/sprite.svg#icon-input-tel"></use>
+                </svg>
+            </div>
+
+            <label class="modal-label" for="user-email">Почта</label>
+            <div class="input-wrapper">
+                <input class="modal-input" type="email" name="user-email" id="user-email">
+                <svg class="icon-input">
+                    <use href="./images/sprite.svg#icon-input-email"></use>
+                </svg>
+            </div>
+        </form>
+
         </div>
     </div>
     <script src="./js/modal.js"></script>
