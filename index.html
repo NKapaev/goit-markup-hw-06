@@ -42,7 +42,7 @@
                 <div class="container">
                     <div class="hero-content">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
+                <button class="accent-button" type="button" data-modal-open>Заказать услугу</button>
             </div>
             </div>
             </section>
@@ -309,7 +309,7 @@
                 <strong class="footer-strong">Подпишитесь на рассылку</strong>
                 <form class="footer-form">
                 <input class="footer-input" type="email" placeholder="E-mail">
-                <button type="submit" class="footer-button">Подписаться
+                <button type="submit" class="accent-button footer-button">Подписаться
                     <svg class="footer-send-icon">
                         <use href="./images/sprite.svg#icon-send"></use>
                     </svg>
@@ -326,9 +326,9 @@
             </svg>
         </button>
 
+        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+        
         <form class="modal-form">
-            <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-
             <label class="modal-label" for="user-name">Имя</label>
             <div class="form-field">
             <input class="modal-input" type="text" id="user-name">
@@ -352,15 +352,17 @@
                     <use href="./images/sprite.svg#icon-input-email"></use>
                 </svg>
             </div>
-
-            <label class="modal-label" for="comment">Комментарий</label>
-            <textarea class="modal-comment" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
             
+            <label class="modal-label" for="comment">Комментарий</label>
+            <textarea class="modal-comment" name="comment" id="comment" cols="50" rows="6" placeholder="Введите текст"></textarea>
+           
             <label class="modal-checkbox" for="checkbox">
-            <input type="checkbox" name="privacy" id="checkbox">
+            <input class="checkbox" type="checkbox" name="privacy" id="checkbox">
+            <span class="check-icon"></span>
             <span>Соглашаюсь с рассылкой и принимаю </span>
             <a class="privacy" href="">Условия договора</a>
             </label>
+            <button class="accent-button modal-button" type="submit">Отправить</button>
         </form>
 
         </div>
