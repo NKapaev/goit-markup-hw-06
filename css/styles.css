@@ -131,6 +131,7 @@ button {
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--white-text-color);
+  border: none;
 }
 
 .header .container {
@@ -179,12 +180,13 @@ button {
   margin-right: auto;
   max-width: 1600px;
   height: 600px;
-  background: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4) rgba(47, 48, 58, 0.4)
-  );
-  background-image: url(../images/bg-hero.jpg);
   background-color: var(--dark-bgc);
+  background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-hero.jpg);
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -500,14 +502,18 @@ p {
 
 .footer-button {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   height: 50px;
+  padding: 0;
 }
 
 .footer-send-icon {
-  margin-left: 10px;
   width: 24px;
   height: 24px;
+  fill: var(--white-text-color);
+  margin-left: 10px;
 }
 
 /* Modal */
@@ -579,6 +585,7 @@ p {
 }
 .modal-label {
   display: block;
+  margin-bottom: 4px;
 }
 .form-field {
   position: relative;
@@ -630,8 +637,15 @@ p {
     outline-color var(--duration) var(--cubic);
 }
 .modal-checkbox {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   margin-bottom: 30px;
+}
+.modal-checkbox:focus ~ .check-icon {
+  outline-color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 .check-icon {
   display: inline-block;
@@ -656,6 +670,17 @@ p {
   background-origin: border-box;
   border-color: var(--accent-color);
   background-size: contain;
+}
+.check-icon {
+  display: inline-block;
+  margin-right: 7px;
+}
+.checkbox:focus + .check-icon {
+  outline-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.modal-text {
+  margin-right: 5px;
 }
 .privacy {
   color: var(--accent-color);
@@ -758,14 +783,14 @@ p {
   transition: box-shadow var(--duration) var(--cubic);
 }
 
-.project-item:hover,
-.project-item:focus {
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-item:hover .overlay-text,
-.project-item:focus .overlay-text {
+.project-link:hover .overlay-text,
+.project-link:focus .overlay-text {
   transform: translateX(0);
 }
 
